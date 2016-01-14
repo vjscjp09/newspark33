@@ -8,11 +8,9 @@ script:
 clone:
   path: github.com/vjscjp09/spark112
 build:
-  image: node:4.0.0
+  image: npateriyainsecure/node-shipped-spark:4.0.0
   commands:
     - echo "build commands"
-    - .shipped/build
-    - .shipped/test
 publish:
   docker:
     dockerfile: ./Dockerfile
